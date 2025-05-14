@@ -4,6 +4,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -34,6 +37,7 @@ public class UsuarioEntity {
 
     @ManyToOne
     @JoinColumn(name = "Especialidadid")
+    @JsonIgnore
     private EspecialidadEntity especialidad; // Relación con EspecialidadEntity (si es necesario)
 
 

@@ -20,5 +20,6 @@ public class EspecialidadServiceImpl implements EspecialidadService {
     public List<EspecialidadEntity> getAllEspecialidades() {
         return especialidadDAO.findAll();
     }
+    
 
 }
