@@ -45,9 +45,7 @@ public class UsuarioServiceImpl implements UsuarioService {
         }
         UsuarioEntity usuario = usuarios.get(0);
         if (usuario.getPassword().equals(password)) {
-            if (usuario.getRol().equals("paciente")) {
-                return usuario;
-            }
+            return usuario;
         }
         return null; // Retorna null si no se cumplen las condiciones
     }

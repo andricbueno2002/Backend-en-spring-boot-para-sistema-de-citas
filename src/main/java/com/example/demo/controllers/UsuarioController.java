@@ -63,6 +63,7 @@ public class UsuarioController {
             respuesta.setId(usuario.getId());
             respuesta.setNombre(usuario.getNombre());
             respuesta.setApellido(usuario.getApellido());
+            respuesta.setRol(usuario.getRol()); 
             return ResponseEntity.ok(respuesta);
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
